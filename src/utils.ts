@@ -26,10 +26,15 @@ const cakes = [
 ];
 
 export const add = (a: number, b: number) => a + b;
-export const isItCake = (val: string) => {
+
+export const isItCake = (val: string, arr?: string[]) => {
+  const arrayOfCakes = arr
+    ? cakes.concat(arr.map((v) => v.toLowerCase()))
+    : cakes;
+
   if (val.toLowerCase().includes('cake')) return true;
-  if (cakes.includes(val.trim().toLowerCase())) return true;
-  if (cakes.includes(val.replace(/cake/i, '').trim().toLowerCase()))
+  if (arrayOfCakes.includes(val.trim().toLowerCase())) return true;
+  if (arrayOfCakes.includes(val.replace(/cake/i, '').trim().toLowerCase()))
     return true;
 
   return false;

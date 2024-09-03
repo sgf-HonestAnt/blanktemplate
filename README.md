@@ -2,7 +2,7 @@
 
 Is it cake? Or is it death?
 
-*Recommended usage in your React app*
+_Recommended usage in your React app_
 
 Import the package by running:
 
@@ -15,9 +15,15 @@ Add an import to your tsx component:
 Test the import, is it cake or it death?
 
 `
-  <div>
-    {["apple", "chicken", "chocolate", "Rainn Wilson's crusty second-day sock"].map((val) => (
-      <div>{isItCake(val) ? `${val} = 🎂` : `${val} = 💀`}</div>
-    ))}
-  </div>
+const showCakeOrDeath = (value: string) => isItCake(value) ? '🎂' : '💀'
+console.log(showCakeOrDeath("chocolate")) // 🎂
+console.log(showCakeOrDeath("chicken")) // 💀
+`
+
+You can also add your own definitions of 'cake':
+
+`
+const moreCakes = ["peach cobbler", "raspberry pavlova", "jaffa"]
+console.log(showCakeOrDeath("jaffa cake", moreCakes)) // 🎂
+console.log(showCakeOrDeath("Rainn Wilson's crusty second-day sock", moreCakes)) // 💀
 `
