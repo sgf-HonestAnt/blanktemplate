@@ -2,6 +2,8 @@
 
 Is it cake? Or is it death?
 
+(Just a silly experiment in publishing an npm package)
+
 _Recommended usage in your React app_
 
 Import the package by running:
