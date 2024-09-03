@@ -1,0 +1,32 @@
+{
+  "name": "cake-or-death",
+  "version": "1.0.0",
+  "description": "Is it cake? Or is it death?",
+  "keywords": [
+    "cake",
+    "death"
+  ],
+  "homepage": "https://github.com/sgf-HonestAnt/cake-or-death",
+  "bugs": {
+    "url": "https://github.com/sgf-HonestAnt/cake-or-death/issues"
+  },
+  "author": "Sarah Fisher",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sgf-HonestAnt/cake-or-death.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.4"
+  },
+  "scripts": {
+    "build": "tsc",
+    "ci": "npm run build",
+    "format": "prettier --write ."
+  }
+}
