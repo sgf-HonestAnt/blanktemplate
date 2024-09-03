@@ -14,12 +14,16 @@ Add an import to your tsx component:
 
 Test the import, is it cake or it death?
 
-`const showCakeOrDeath = (value: string) => isItCake(value) ? '🎂' : '💀'
-console.log(showCakeOrDeath("chocolate")) // 🎂
-console.log(showCakeOrDeath("chicken")) // 💀`
+`const showCakeOrDeath = (value: string) => isItCake(value) ? '🎂' : '💀'`
+
+`console.log(showCakeOrDeath("chocolate")) // 🎂`
+
+`console.log(showCakeOrDeath("chicken")) // 💀`
 
 You can also add your own definitions of 'cake':
 
-`const moreCakes = ["peach cobbler", "raspberry pavlova", "jaffa"]
-console.log(showCakeOrDeath("jaffa cake", moreCakes)) // 🎂
-console.log(showCakeOrDeath("Rainn Wilson's crusty second-day sock", moreCakes)) // 💀`
+`const moreCakes = ["peach cobbler", "raspberry pavlova", "jaffa"]`
+
+`console.log(showCakeOrDeath("jaffa cake", moreCakes)) // 🎂`
+
+`console.log(showCakeOrDeath("Rainn Wilson's crusty second-day sock", moreCakes)) // 💀`
