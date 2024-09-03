@@ -35,6 +35,7 @@
     "ci": "npm run build && npm run check-format && npm run check-exports && npm run lint && npm run test",
     "format": "prettier --write .",
     "check-format": "prettier --check .",
+    "lint": "tsc",
     "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
     "local-release": "changeset version && changeset publish",
     "prepublishOnly": "npm run ci"
