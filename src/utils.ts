@@ -1,31 +1,36 @@
 const cakes = [
-  'angel cake',
-  'apple cake',
+  'angel',
+  'apple',
   'bakewell tart',
-  'battenberg cake',
+  'battenberg',
   'black bun',
-  'carrot cake',
-  'cherry cake',
-  'christmas cake',
-  'dundee cake',
-  'eccles cake',
-  'fruitcake',
+  'carrot',
+  'cherry',
+  'christmas',
+  'dundee',
+  'eccles',
+  'frui',
   'gingerbread',
-  'jelly cake',
-  'lemon drizzle cake',
-  'lardy cake',
+  'jelly',
+  'lemon drizzle',
+  'lardy',
   'parkin',
-  'rock cake',
-  'simnel cake',
+  'rock',
+  'simnel',
   'sticky toffee pudding',
-  'sponge cake',
+  'sponge',
   'tea loaf',
   'treacle tart',
   'victoria sponge',
-  'welsh cake',
+  'welsh',
 ];
 
 export const add = (a: number, b: number) => a + b;
-export const isItCake = (val: string) =>
-  cakes.includes(val.toLowerCase()) ||
-  cakes.includes(val.replace(/cake/i, '').toLowerCase());
+export const isItCake = (val: string) => {
+  if (val.toLowerCase().includes('cake')) return true;
+  if (cakes.includes(val.trim().toLowerCase())) return true;
+  if (cakes.includes(val.replace(/cake/i, '').trim().toLowerCase()))
+    return true;
+
+  return false;
+};
