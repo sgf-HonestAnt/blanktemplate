@@ -6,9 +6,9 @@ Is it cake? 🎂 Or is it death? 💀
 
 Inspired by Suzy Eddie Izzard's [Cake or Death](https://www.youtube.com/watch?v=rZVjKlBCvhg)
 
-___
+---
 
-__Recommended usage in your React app__
+**Recommended usage in your React app**
 
 1. Import the package by running: `npm i cake-or-death`
 
