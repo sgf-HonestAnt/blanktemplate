@@ -14,7 +14,7 @@ Inspired by Suzy Eddie Izzard's [Cake or Death](https://www.youtube.com/watch?v=
 
 2. Add an import to your file: `import { isItCake } from "cake-or-death"`
 
-3. Test the import, is it cake or it death?
+3. Test the import, is it cake or is it death?
 
 ```
 const showCakeOrDeath = (value: string) => isItCake(value) ? '🎂' : '💀'
@@ -27,6 +27,8 @@ console.log(showCakeOrDeath("chicken")) // 💀
 4. You can also add your own definitions of 'cake':
 
 ```
+const showCakeOrDeath = (val: string, arr: string[]) => isItCake(val, arr) ? '🎂' : '💀'
+
 const moreCakes = ["peach cobbler", "raspberry pavlova", "jaffa"]
 
 console.log(showCakeOrDeath("jaffa cake", moreCakes)) // 🎂
